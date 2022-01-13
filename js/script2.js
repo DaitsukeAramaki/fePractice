@@ -28,19 +28,13 @@ const personalMovieDB = {
 for (let i = 1; i <= personalMovieDB.count; i++) {
     let a = prompt('Один из последних просмотренных фильмов?', ''),
         b = prompt('На сколько оцените его?', '');
-        if (a.length > 0 && a.length <= 50){
-            if (b.length > 0) {
-                personalMovieDB.movies[a] = b;
-            } else {
-                i--;
-                continue;
-            }
+        if (a != null && b != null && a != "" && b !="" && a.length <= 50){
+            personalMovieDB.movies[a] = b;
         } else {
-                i--;
-                continue;
+            i--;
+            continue;
         }
-    }
-
+}
 
 console.log (personalMovieDB);
 if (personalMovieDB.count < 10 ){
