@@ -64,15 +64,15 @@ const personalMovieDB = {
 
             if (genre === '' || genre == null){
                 console.log ('Вы ввели некорректные данные или не ввели их вообще');
-                i--
+                i--;
             }
             else {
             personalMovieDB.genres[i - 1] = genre;
-            };
-        };
+            }
+        }
         personalMovieDB.genres.forEach((item,i) => {
             console.log (`Любимый жанр ${i + 1} - это ${item}`);
-        })
+        });
     },
 
     toggleVisibleMyDB: function(){
