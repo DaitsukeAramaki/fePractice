@@ -35,7 +35,7 @@ adv.forEach(item => {
 
 genre.textContent = 'Драма';
 
-poster.style.backgroundImage = 'url("")';
+poster.style.backgroundImage = 'url("img/bg.jpg")';
 
 movieList.innerHTML = "";
 
